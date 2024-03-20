@@ -11,7 +11,17 @@
 </head>
 
 <body>
+    {{-- Header --}}
+    @include('includes.header')
 
+    {{-- Main --}}
+    <main class="container">
+        <section id="@yield('section-id')">
+            <div class="card main-card my-5 p-5">
+                @yield('card-content')
+            </div>
+        </section>
+    </main>
 </body>
 
 </html>
